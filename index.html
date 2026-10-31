@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Properties Research Report</title><link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+    <h1>CSS Properties Research Report</h1>
+
+    <h2>Introduction</h2>
+    <p>
+        CSS stands for Cascading Style Sheets. It is used to
+        design and style web pages. CSS controls colors, fonts,
+        backgrounds, layouts, spacing and animations.
+    </p>
+
+    <h2>1. Text and Font Properties</h2>
+    <p>These properties control the appearance of text.</p>
+    <ul>
+        <li>color: Changes text color. Values: red, blue, black.</li>
+        <li>font-family: Changes font type. Values: Arial, Times New Roman.</li>
+        <li>font-size: Changes text size. Values: 12px, 16px, 20px.</li>
+        <li>font-weight: Controls text thickness. Values: normal, bold, 100–900.</li>
+        <li>font-style: Changes text style. Values: normal, italic, oblique.</li>
+        <li>line-height: Controls line spacing. Values: normal, 1.5, 20px.</li>
+        <li>text-align: Aligns text. Values: left, right, center, justify.</li>
+        <li>text-decoration: Decorates text. Values: none, underline, overline.</li>
+        <li>text-transform: Changes capitalization. Values: uppercase, lowercase, capitalize.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>p { color: blue; font-size: 18px; text-align: center; }</p>
+
+    <h2>2. Box Model Properties</h2>
+    <p>
+        The box model describes how HTML elements are displayed
+        using content, padding, border and margin.
+    </p>
+    <ul>
+        <li>width: Sets element width. Values: 100px, 50%, auto.</li>
+        <li>height: Sets element height. Values: 100px, 200px, auto.</li>
+        <li>margin: Adds outside spacing. Values: 10px, 20px, auto.</li>
+        <li>padding: Adds inside spacing. Values: 10px, 15px, 20px.</li>
+        <li>border: Adds a border. Values: 1px solid black, 2px dashed red.</li>
+        <li>box-sizing: Controls box dimensions. Values: content-box, border-box.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        .box { width: 300px; height: 150px; margin: 20px;
+        padding: 15px; border: 2px solid black; }
+    </p>
+
+    <h2>3. Background Properties</h2>
+    <p>These properties control the background of webpage elements.</p>
+    <ul>
+        <li>background-color: Sets background color. Values: red, blue, white.</li>
+        <li>background-image: Adds an image. Values: url("image.jpg"), none.</li>
+        <li>background-size: Controls image size. Values: cover, contain, auto.</li>
+        <li>background-position: Sets image position. Values: center, top, bottom.</li>
+        <li>background-repeat: Controls image repetition. Values: repeat, no-repeat.</li>
+        <li>background-attachment: Controls background scrolling. Values: fixed, scroll.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        body { background-color: lightblue;
+        background-image: url("image.jpg");
+        background-size: cover; }
+    </p>
+
+    <h2>4. Layout and Positioning</h2>
+    <p>These properties control the arrangement and position of elements.</p>
+    <ul>
+        <li>display: Controls element display. Values: block, inline, flex, grid, none.</li>
+        <li>position: Sets positioning method. Values: static, relative, absolute, fixed, sticky.</li>
+        <li>top: Sets distance from the top. Values: 10px, 20px, auto.</li>
+        <li>right: Sets distance from the right. Values: 10px, 20px, auto.</li>
+        <li>bottom: Sets distance from the bottom. Values: 10px, 20px, auto.</li>
+        <li>left: Sets distance from the left. Values: 10px, 20px, auto.</li>
+        <li>z-index: Controls stacking order. Values: 1, 2, 10, auto.</li>
+        <li>float: Positions elements left or right. Values: left, right, none.</li>
+        <li>overflow: Controls extra content. Values: visible, hidden, scroll, auto.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        .box { position: absolute; top: 20px;
+        left: 30px; z-index: 2; }
+    </p>
+
+    <h2>5. Flexbox Properties</h2>
+    <p>
+        Flexbox is a CSS layout system used to arrange elements
+        in rows or columns.
+    </p>
+    <ul>
+        <li>display: Activates Flexbox. Values: flex, inline-flex.</li>
+        <li>justify-content: Aligns items along the main axis. Values: center, flex-start, flex-end, space-between.</li>
+        <li>align-items: Aligns items along the cross axis. Values: center, stretch, flex-start, flex-end.</li>
+        <li>flex-direction: Sets item direction. Values: row, column, row-reverse, column-reverse.</li>
+        <li>flex-wrap: Controls wrapping. Values: nowrap, wrap, wrap-reverse.</li>
+        <li>gap: Adds space between items. Values: 10px, 20px.</li>
+        <li>flex-grow: Controls item growth. Values: 0, 1, 2.</li>
+        <li>flex-shrink: Controls item shrinking. Values: 0, 1, 2.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        .container { display: flex; justify-content: center;
+        align-items: center; flex-direction: row; gap: 20px; }
+    </p>
+
+    <h2>6. Grid Properties</h2>
+    <p>
+        CSS Grid is a layout system used to organize elements
+        into rows and columns.
+    </p>
+    <ul>
+        <li>display: Activates Grid. Values: grid, inline-grid.</li>
+        <li>grid-template-columns: Defines columns. Values: 1fr 1fr, repeat(3, 1fr).</li>
+        <li>grid-template-rows: Defines rows. Values: 100px, auto.</li>
+        <li>gap: Adds space between grid items. Values: 10px, 20px.</li>
+        <li>row-gap: Adds space between rows. Values: 10px, 20px.</li>
+        <li>column-gap: Adds space between columns. Values: 10px, 20px.</li>
+        <li>grid-area: Places an item in a grid area. Values: header, main, sidebar.</li>
+        <li>grid-column: Controls column placement. Values: 1 / 3, span 2.</li>
+        <li>grid-row: Controls row placement. Values: 1 / 3, span 2.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        .container { display: grid;
+        grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    </p>
+
+    <h2>7. Visual Effects Properties</h2>
+    <p>These properties add attractive visual effects to webpages.</p>
+    <ul>
+        <li>opacity: Controls transparency. Values: 0, 0.5, 1.</li>
+        <li>box-shadow: Adds shadows. Values: 2px 2px 5px gray, none.</li>
+        <li>border-radius: Rounds corners. Values: 5px, 10px, 50%.</li>
+        <li>transform: Moves or rotates elements. Values: rotate(), scale(), translate(), skew().</li>
+        <li>transition: Makes changes smooth. Values: 0.3s, 1s, ease, linear.</li>
+        <li>animation: Creates animated effects. Values: animation-name, duration, timing-function.</li>
+        <li>filter: Applies visual effects. Values: blur(), grayscale(), brightness().</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        .box { opacity: 0.8; box-shadow: 5px 5px 10px gray;
+        border-radius: 10px; transition: 0.5s; }
+    </p>
+
+    <h2>8. Responsive Design</h2>
+    <p>
+        Responsive design allows websites to adjust automatically
+        to different screen sizes, such as computers, tablets and phones.
+    </p>
+
+    <h3>CSS Units</h3>
+    <ul>
+        <li>px: Fixed pixel measurement. Example: 20px.</li>
+        <li>%: Relative to the parent element. Example: 50%.</li>
+        <li>em: Relative to the font size. Example: 2em.</li>
+        <li>rem: Relative to the root font size. Example: 1.5rem.</li>
+        <li>vw: Relative to viewport width. Example: 50vw.</li>
+        <li>vh: Relative to viewport height. Example: 100vh.</li>
+    </ul>
+
+    <h3>Media Queries</h3>
+    <p>
+        Media queries apply different styles depending on screen size
+        or device characteristics.
+    </p>
+    <ul>
+        <li>max-width: Applies styles below or at a specified width.</li>
+        <li>min-width: Applies styles above or at a specified width.</li>
+        <li>orientation: Detects portrait or landscape screen orientation.</li>
+    </ul>
+
+    <h3>Example</h3>
+    <p>
+        @media screen and (max-width: 600px) {
+        .container { width: 100%; } }
+    </p>
+
+    <h2>Conclusion</h2>
+    <p>
+        CSS properties are important in web development because
+        they help create attractive, organized, interactive and
+        responsive websites. They control text, backgrounds,
+        spacing, positioning, layouts and visual effects.
+    </p>
+
+    <h2>References</h2>
+    <ol>
+        <li><a href="https://www.w3schools.com/css/">W3Schools CSS Tutorial</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS Documentation</a></li>
+        <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+        <li><a href="https://www.freecodecamp.org/">freeCodeCamp</a></li>
+    </ol>
+
+</body>
+</html>
